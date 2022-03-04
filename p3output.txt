@@ -1,1 +1,107 @@
+gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x812: file p3original.c, line 40.
+unable to run, main file "main.c" not found
+ gcc -g p5original.c
+p5original.c: In function ‘input_array’:
+p5original.c:10:7: error: ‘i’ undeclared (first use in this function)
+   for(i=0;i<n;i++)
+       ^
+p5original.c:10:7: note: each undeclared identifier is reported only once for each function it appears in
+p5original.c: In function ‘ets’:
+p5original.c:18:8: error: ‘o’ undeclared (first use in this function)
+  int i=o;
+        ^
+p5original.c:19:11: warning: implicit declaration of function ‘sqrt’ [-Wimplicit-function-declaration]
+   while(i<sqrt(n))
+           ^~~~
+p5original.c:19:11: warning: incompatible implicit declaration of built-in function ‘sqrt’
+p5original.c:19:11: note: include ‘<math.h>’ or provide a declaration of ‘sqrt’
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+unable to run, main file "main.c" not found
+ gcc -g p3original.c
+ ./a.out
+Enter the number:
+12
+12 is not a prime number 
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+unable to run, main file "main.c" not found
+ gcc -g p3original.c
+ ./a.out
+Enter the number:
+12
+12 is not a prime number 
+ gdb a.out
+GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
+Copyright (C) 2018 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from a.out...done.
+(gdb) b main
+Breakpoint 1 at 0x812: file p3original.c, line 40.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) n
+The program is not being run.
+(gdb) r
+Starting program: /home/runner/Test2Session1-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
 
+Breakpoint 1, main () at p3original.c:40
+40    n=input();
+(gdb) n
+Enter the number:n
+41    flag=isprime(n);
+(gdb) n
+42    output(n,prime);
+(gdb) n
+43    return 0;
+(gdb) n
+44  }
+(gdb) n
