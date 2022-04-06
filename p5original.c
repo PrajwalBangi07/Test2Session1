@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
  int input_array_size()
 {
   int n;
@@ -7,6 +8,7 @@
 }
 void input_array(int n,int a[n])
 {
+  int i;
   for(i=0;i<n;i++)
     {
       a[i]=i;
@@ -15,7 +17,7 @@ void input_array(int n,int a[n])
 }
 void ets(int n,int a[n])
 {
- int i=o;
+ int i=0;
   while(i<sqrt(n))
     {
      while(a[i]==0)i++;
@@ -37,5 +39,9 @@ int main()
 {
   int i,n;
   n=input_array_size();
+  int a[100]={10};
+  ets(n,a);
+  display(n,a);
+  return 0;
   
 }
